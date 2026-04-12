@@ -1,0 +1,401 @@
+/* ======================= */
+/* GENERAL */
+/* ======================= */
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f7f8fc;
+}
+
+/* ======================= */
+/* LAYOUT MESERO */
+/* ======================= */
+
+.dashboard-body {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 240px;
+    background: #ffffff;
+    border-right: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+.main {
+    flex: 1;
+    padding: 40px;
+    overflow-x: auto;
+}
+
+/* ======================= */
+/* SIDEBAR */
+/* ======================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-weight: 600;
+}
+
+.logo img {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+.user-info {
+    padding: 0 20px 20px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.menu {
+    padding: 20px;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.menu a:hover {
+    background: #f2f4ff;
+    color: #e9bb00;
+}
+
+.menu a.active {
+    background: #e7bb0d;
+    color: white;
+}
+
+.logout-box {
+    padding: 20px;
+}
+
+/* ======================= */
+/* TOPBAR */
+/* ======================= */
+
+.topbar {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.topbar h1,
+.topbar h2 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.topbar p {
+    margin: 8px 0 0 0;
+    color: #666;
+}
+
+/* ======================= */
+/* BOTONES */
+/* ======================= */
+
+button,
+.btn {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #e8cf44;
+    color: white;
+    transition: 0.2s;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover,
+.btn:hover {
+    background: #ede742;
+}
+
+.btn-add {
+    background: #10b981;
+}
+
+.btn-add:hover {
+    background: #059669;
+}
+
+.btn-delete {
+    background: #ef4444;
+}
+
+.btn-delete:hover {
+    background: #dc2626;
+}
+
+.btn-dark {
+    background: #111827;
+}
+
+.btn-dark:hover {
+    background: #000000;
+}
+
+/* ======================= */
+/* CARDS */
+/* ======================= */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 18px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    background: #f3f4f6;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin: 12px 0 8px;
+}
+
+.card p {
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.price {
+    color: #e63946;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* ======================= */
+/* ACCIONES */
+/* ======================= */
+
+.acciones {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.icon {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.edit {
+    color: #4f46e5;
+}
+
+.delete {
+    color: #e63946;
+}
+
+/* ======================= */
+/* FORMULARIOS */
+/* ======================= */
+
+.form-container {
+    max-width: 850px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.08);
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.form-control:focus {
+    border-color: #4f46e5;
+    outline: none;
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+/* ======================= */
+/* BLOQUES DE PRODUCTOS EN PEDIDO */
+/* ======================= */
+
+.mod-box {
+    border: 1px solid #e5e7eb;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.opcion {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.opcion input[type="number"] {
+    width: 90px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* ======================= */
+/* TABLAS */
+/* ======================= */
+
+.table-wrap {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+.table th {
+    background: #f9fafb;
+    font-weight: 600;
+}
+
+/* ======================= */
+/* RESÚMENES */
+/* ======================= */
+
+.resume-box {
+    margin-top: 20px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.resume-box p {
+    margin: 8px 0;
+}
+
+.precio-base {
+    font-size: 24px;
+    color: #e63946;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* ======================= */
+/* ALERTAS */
+/* ======================= */
+
+.alert-box {
+    background: #fee2e2;
+    color: #991b1b;
+    padding: 12px 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* ======================= */
+/* RESPONSIVE */
+/* ======================= */
+
+@media (max-width: 900px) {
+    .dashboard-body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #eee;
+    }
+
+    .main {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    }
+
+    .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .opcion {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+.logout-box a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: #a80909;
+    color: white;
+    padding: 14px;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.logout-box a:hover {
+    background: #dc2626;
+}
