@@ -1,0 +1,46 @@
+/* ===================== */
+/* TABLA USUARIOS */
+/* ===================== */
+
+.tabla-usuarios {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-usuarios th,
+.tabla-usuarios td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.tabla-usuarios th {
+    background: #f4f6f9;
+}
+
+/* BADGES */
+.badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.activo {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.inactivo {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+/* ACCIONES */
+.acciones {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    cursor: pointer;
+    font-size: 18px;
+}
