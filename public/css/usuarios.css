@@ -5,42 +5,63 @@
 .tabla-usuarios {
     width: 100%;
     border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .tabla-usuarios th,
 .tabla-usuarios td {
     padding: 12px;
-    border-bottom: 1px solid #eee;
+    text-align: center; /* 🔥 CENTRAR */
 }
 
 .tabla-usuarios th {
-    background: #f4f6f9;
+    background: #1d3557;
+    color: white;
+}
+
+.tabla-usuarios tr:nth-child(even) {
+    background: #f1f1f1;
+}
+
+.tabla-usuarios tr:hover {
+    background: #e9ecef;
 }
 
 /* BADGES */
 .badge {
     padding: 5px 10px;
-    border-radius: 20px;
+    border-radius: 8px;
     font-size: 12px;
 }
 
 .activo {
-    background: #d1fae5;
-    color: #065f46;
+    background: #2ecc71;
+    color: white;
 }
 
 .inactivo {
-    background: #fee2e2;
-    color: #991b1b;
+    background: #e74c3c;
+    color: white;
 }
 
-/* ACCIONES */
-.acciones {
-    display: flex;
-    gap: 10px;
-}
-
+/* ICONOS */
 .icon {
     cursor: pointer;
     font-size: 18px;
+    margin: 0 5px;
+}
+
+/* SELECT */
+select {
+    padding: 5px;
+    border-radius: 6px;
+}
+/* FILTROS BUSQUEDA */
+
+#buscador, #filtroRol, #filtroEstado {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
 }

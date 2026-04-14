@@ -23,22 +23,8 @@ switch($controller){
     break;
 
     case "usuario":
-
     require_once "app/controllers/UsuarioController.php";
-    $controller = new UsuarioController();
-
-    if($action == "index"){
-        $controller->index();
-    }
-
-    if($action == "editar"){
-        $controller->editar();
-    }
-
-    if($action == "estado"){
-        $controller->cambiarEstado();
-    }
-
+    $ctrl = new UsuarioController();
 break;
 
     default:
